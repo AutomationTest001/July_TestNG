@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-06T12:39:01 IST" name="Default suite" finished-at="2022-08-06T12:39:21 IST" duration-ms="19997">
+    <groups>
+    </groups>
+    <test started-at="2022-08-06T12:39:01 IST" name="Default test" finished-at="2022-08-06T12:39:21 IST" duration-ms="19997">
+      <class name="com.itview.testcases.CarHomeEMI_Test">
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:com.itview.testcases.CarHomeEMI_Test@34625ccd]" started-at="2022-08-06T12:39:01 IST" name="preCondition" finished-at="2022-08-06T12:39:17 IST" duration-ms="15658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="carLoan_10lakh()[pri:0, instance:com.itview.testcases.CarHomeEMI_Test@34625ccd]" started-at="2022-08-06T12:39:17 IST" name="carLoan_10lakh" description="Verify car loan  Amount - &gt; 10 lakh " finished-at="2022-08-06T12:39:21 IST" duration-ms="3635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- carLoan_10lakh -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:com.itview.testcases.CarHomeEMI_Test@34625ccd]" started-at="2022-08-06T12:39:21 IST" name="postCondition" finished-at="2022-08-06T12:39:21 IST" duration-ms="426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- com.itview.testcases.CarHomeEMI_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

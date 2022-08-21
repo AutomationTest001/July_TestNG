@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="RegressionSuite" duration-ms="91487" started-at="2022-08-13T12:07:27 IST" finished-at="2022-08-13T12:08:59 IST">
+    <groups>
+    </groups>
+    <test name="Test - CarHomeEMI" duration-ms="55276" started-at="2022-08-13T12:07:27 IST" finished-at="2022-08-13T12:08:22 IST">
+      <class name="com.itview.testcases.CarHomeEMI_Test">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.itview.testcases.CarHomeEMI_Test@3d285d7e]" name="preCondition" is-config="true" duration-ms="50000" started-at="2022-08-13T12:07:27 IST" finished-at="2022-08-13T12:08:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="carLoan_10lakh()[pri:0, instance:com.itview.testcases.CarHomeEMI_Test@3d285d7e]" name="carLoan_10lakh" duration-ms="3778" started-at="2022-08-13T12:08:17 IST" description="Verify car loan  Amount - &gt; 10 lakh " finished-at="2022-08-13T12:08:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- carLoan_10lakh -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.itview.testcases.CarHomeEMI_Test@3d285d7e]" name="postCondition" is-config="true" duration-ms="1191" started-at="2022-08-13T12:08:21 IST" finished-at="2022-08-13T12:08:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- com.itview.testcases.CarHomeEMI_Test -->
+    </test> <!-- Test - CarHomeEMI -->
+    <test name="Test - CreditCardEMI" duration-ms="18301" started-at="2022-08-13T12:08:22 IST" finished-at="2022-08-13T12:08:41 IST">
+      <class name="com.itview.testcases.CreditCard_Test">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.itview.testcases.CreditCard_Test@7dc0f706]" name="preCondition" is-config="true" duration-ms="9637" started-at="2022-08-13T12:08:22 IST" finished-at="2022-08-13T12:08:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="FAIL" signature="outStandingAmount_10000()[pri:0, instance:com.itview.testcases.CreditCard_Test@7dc0f706]" name="outStandingAmount_10000" duration-ms="3673" started-at="2022-08-13T12:08:32 IST" description="Verify OutStanding Amount - &gt; 10000 " finished-at="2022-08-13T12:08:36 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [15,730] but found [15,730.99]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [15,730] but found [15,730.99]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.itview.testcases.CreditCard_Test.outStandingAmount_10000(CreditCard_Test.java:43)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- outStandingAmount_10000 -->
+        <test-method status="PASS" signature="outStandingAmount_20000()[pri:1, instance:com.itview.testcases.CreditCard_Test@7dc0f706]" name="outStandingAmount_20000" duration-ms="3376" started-at="2022-08-13T12:08:36 IST" description="Verify OutStanding Amount - &gt; 20000 " finished-at="2022-08-13T12:08:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- outStandingAmount_20000 -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.itview.testcases.CreditCard_Test@7dc0f706]" name="postCondition" is-config="true" duration-ms="899" started-at="2022-08-13T12:08:40 IST" finished-at="2022-08-13T12:08:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- com.itview.testcases.CreditCard_Test -->
+    </test> <!-- Test - CreditCardEMI -->
+    <test name="Test - EducationEMI" duration-ms="17865" started-at="2022-08-13T12:08:41 IST" finished-at="2022-08-13T12:08:59 IST">
+      <class name="com.itview.testcases.EducationEMI_Test">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.itview.testcases.EducationEMI_Test@2de23121]" name="preCondition" is-config="true" duration-ms="12931" started-at="2022-08-13T12:08:41 IST" finished-at="2022-08-13T12:08:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="educationLoan_4lakh()[pri:0, instance:com.itview.testcases.EducationEMI_Test@2de23121]" name="educationLoan_4lakh" duration-ms="3705" started-at="2022-08-13T12:08:54 IST" description="Verify Education  Amount - &gt; 4 lakh " finished-at="2022-08-13T12:08:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- educationLoan_4lakh -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.itview.testcases.EducationEMI_Test@2de23121]" name="postCondition" is-config="true" duration-ms="973" started-at="2022-08-13T12:08:58 IST" finished-at="2022-08-13T12:08:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- com.itview.testcases.EducationEMI_Test -->
+    </test> <!-- Test - EducationEMI -->
+  </suite> <!-- RegressionSuite -->
+</testng-results>
